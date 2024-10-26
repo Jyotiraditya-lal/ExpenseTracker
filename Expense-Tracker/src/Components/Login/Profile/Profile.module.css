@@ -1,45 +1,67 @@
 .input {
-    margin: 2rem auto;
-    padding: 1rem;
-    width: 90%;
-    max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input input {
+  font: inherit;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
+
+.button {
+  font: inherit;
+  border: 1px solid #4f005f;
+  background: #4f005f;
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: #741188;
+  border-color: #741188;
+}
+
+.button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .input {
+    max-width: 90%;
+    margin: 1.5rem auto;
   }
-  
-  .input label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input input {
-    font: inherit;
-    display: block;
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 0.15rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input input:focus {
-    outline: none;
-    border-color: #4f005f;
-  }
+
   .button {
-    font: inherit;
-    border: 1px solid #4f005f;
-    background: #4f005f;
-    color: white;
-    padding: 0.25rem 1rem;
-    cursor: pointer;
+    padding: 0.5rem 1.5rem;
   }
-  
-  .button:hover,
-  .button:active {
-    background: #741188;
-    border-color: #741188;
+}
+
+@media (max-width: 480px) {
+  .input {
+    max-width: 95%;
+    margin: 1rem auto;
   }
-  
-  .button:focus {
-    outline: none;
+
+  .button {
+    padding: 0.4rem 1.2rem;
   }
-  
+}
